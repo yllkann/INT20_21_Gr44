@@ -96,7 +96,7 @@ transition: 0.5s;
     transition:1s;
 }
 
-/*------Section2-----*/
+/*------Section2----body-------*/
 .tam
 {
 width: 100%;
@@ -171,9 +171,28 @@ background: rgb(150, 117, 117);
 }
 
 
+/*-----Section2 ------footer---*/
 
 
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
 
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight:600;
+
+}
+
+.icons .fa{
+color: black;
+margin: 0 13px;
+cursor: pointer;
+padding: 18px 0;
+}
 
 
 
