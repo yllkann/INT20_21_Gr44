@@ -1,0 +1,5 @@
+Shpjegimet per tagjet me te rralla
+    1. Z-INDEX ->specifikon stack order te nje elementi 
+              Elementi me stck order me te madh eshte perpara elementit me stack order me te ult
+            Punon vetem ne elementet POSITIONED dhe elementet FLEX
+    2. OVRFLOW-X -> 

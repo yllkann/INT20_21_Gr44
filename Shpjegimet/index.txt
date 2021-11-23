@@ -1,5 +1,0 @@
-1. Shkruajm titullin. ~Web-creator-WebDxC~
-2. Fillojm te punojme ne body
-    1) Krijojme shiritin e navigimit qe sipas deshires do te jete fixed gjate gjithe faqes kryesore
-        Qe te krijojme nje nav bar brenda DIV do te hapim dy tagje SPAN qe ne njeren ane ta vendosim logon dhe ne anen tjeter te vendosim elementet e navbarit
-             overflow:
