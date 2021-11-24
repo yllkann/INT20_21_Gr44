@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css/">
+    <link rel="stylesheet" href="index.css">
     <title>Web-creator-WebDXC</title>
 
     <style>
@@ -17,8 +17,101 @@
         {
             margin:0;
         }
+        .header{
+min-height: 100vh;
+width: 100%;
+background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(Foto/back.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 90px;
+    border-radius: 50%;
+
+}
+
+.nav-links{
+ flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+      
+}
+
+.nav-links ul li::after{
+content:' ';
+width: 0%;
+height: 5px;
+background-color: rgb(196, 115, 94);
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.atextb{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+
+}
+.atextb:hover{
+    border: 1px solid brown;
+    background: brown;
+    transition:1s;
+}
+
         
-        .navbar {
+    /*  .navbar {
           overflow: hidden;
          position: fixed;
           top:0;
@@ -44,7 +137,7 @@
         .slogan1{
           background-color: darkcyan;
           height: 100%;
-        }
+        } */
         .kutia
         {
           width: 100%;
@@ -62,7 +155,7 @@
           border:2px solid blue;
           float: right;
         }
-       
+      
        
 </style>
 </head>
@@ -72,16 +165,46 @@
 
 <!--KRIJIMI I NAVBAR-->     
 
-  <div class="navbar">
+<!-- <div class="navbar">
     <a href="#logo" style="float: left; font-size:xx-large; ">LOGO</a>
     <a href="#" ><button>LogIn</button></a>
     <a href="#product">Product</a>
     <a href="tamplates.html">Templates</a>
     <a href="#resources" >Resources</a>
-  </div>
+  </div>--> 
+  <section class="header">
+    <nav>
+    <a href="Index.html"><img src="Foto/lolo.jpg"></a>
+    <div class="nav-links">
+    <ul>
+        <li>
+            <a href="">Product</a>
+        </li>
+        <li>
+            <a href="">Tamplates</a>
+        </li>
+        <li>
+            <a href="">Resources</a>
+        </li>
+        <li>
+            <a href="">Contact</a>
+        </li>
+    </ul>
+    </div>
+    </nav>
+    
+    <div class="text-box">
+        <h1>
+         Tamplates
+        </h1>
+        <p>This is a Paragraph</p>
+        <a href="Index.html" class="atextb">GO BACK TO HOME-PAGE</a>
+    </div>
+    <!--Section i llojeve te taamplates-->
+        </section>
 
 <!--SLOGAN ME FIGURE-->
-<img src="Foto/main.jpg" style="width: 100%;">
+
 
 <!--SLOGANI2-->
 
