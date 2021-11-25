@@ -1,0 +1,200 @@
+
+
+    *
+    {
+      margin: 0;
+      padding: 0;
+    }
+    body 
+    {
+        margin:0;
+    }
+
+    /*Krijimi i header*/
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(Foto/back.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        }
+
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+    nav img{
+        width: 90px;
+        border-radius: 50%;
+
+        }
+
+    .nav-links{
+        flex: 1;
+        text-align: right;
+
+        }
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 15px;
+        position: relative;
+
+        }
+
+    .nav-links ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        
+        }
+
+    .nav-links ul li::after{
+        content:' ';
+        width: 0%;
+        height: 5px;
+        background-color: rgb(196, 115, 94);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+        }
+    .nav-links ul li:hover::after{
+        width: 100%;
+        }
+
+    .text-box{
+        width: 90%;
+        color: white;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        }
+
+    .text-box h1{
+        font-size: 60px;
+        }
+    .text-box p{
+        margin:10px 0 40px;
+        font-size: 14px;
+        color: white;
+        }
+
+    .atextb{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position:relative;
+        cursor: pointer;
+
+        }
+    .atextb:hover{
+        border: 1px solid brown;
+        background: brown;
+        transition:1s;
+        }
+
+
+    /*Hapat per realizimin dhe funksionimin e WebSite*/
+
+    .fazat
+    {
+      background-color: #AEC6CF;
+      width: 100%;
+      height: 80vh;
+      
+      border: 2px solid black;
+    }
+    .fazat .fazat-p1
+    {
+      margin-top: 20px;
+      
+      width: 40%;
+      height: 70vh;
+      border: 2px solid red;
+      float: left;
+    }
+    .fazat .fazat-p2{
+      margin-top: 20px;
+      
+      height: 70vh;
+      width:58%;
+      border:2px solid blue;
+      float: right;
+      padding-left: 20px;
+      
+    }
+    .fazat img{
+      margin-left: 25%;
+      image-resolution:initial;
+    }
+    .fazat table{
+      
+      margin-right: auto;
+      margin-left: auto;
+        
+    }
+
+/*Shabllonet per cdo lemi*/
+    .kutia
+    {
+      background-color: hotpink;
+      width: 100%;
+      height: 80vh;
+      
+      border: 2px solid black;
+    }
+    .kutia .pjesa1
+    {
+      margin-top: 20px;
+      background-color: hotpink;
+      width: 60%;
+      height: 70vh;
+      border: 2px solid red;
+      float: left;
+    }
+    .kutia .pjesa2{
+      margin-top: 20px;
+      background-color: hotpink;
+      height: 70vh;
+      width:30%;
+      border:2px solid blue;
+      float: right;
+   
+    }
+    .kutia img{
+      margin-top: 15%;
+      margin-left: 25%;
+      image-resolution:initial;
+    }
+
+   
+    .kutia2 th{
+        
+        font-size:55px;
+        text-align: left;
+        padding-left: 200px;
+        padding-bottom: 5px;
+        
+        
+    }
+    
+    .kutia2 th a{
+        
+       text-decoration: none;
+    } 
+    .kutia2 th a:hover{
+        
+        color: white;
+     } 
