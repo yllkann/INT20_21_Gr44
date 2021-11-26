@@ -162,3 +162,50 @@ transition: 0.5s;
     padding-left: 310px;
     padding-top: 20px;
 }
+
+
+/*DESIGN OPTIONS*/
+.layout
+{
+    width: 100%;
+    height: 110vh;
+    background-color: #8e82a0;
+    color: white;
+}
+.layout h1{
+    
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.layout h4{
+    text-align: center;
+    font-size: 25px;
+}
+.layout img{
+    padding-left: 310px;
+    padding-top: 20px;
+}
+
+.layout
+{
+    width: 100%;
+    height: 98vh;
+    
+}
+.layout h1{
+    
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.layout h4{
+    text-align: center;
+    font-size: 25px;
+}
+.layout img{
+    padding-left: 310px;
+    padding-top: 20px;
+}
