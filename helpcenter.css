@@ -5,7 +5,7 @@
 .header{
 min-height: 30vh;
 width: 100%;
-background-image:url(Foto/wp9572820.jpg);
+background-image:url(Foto/helpcpic/images.jpg);
 background-position: center;
 background-size: cover;
 position: relative;
@@ -57,7 +57,7 @@ transition: 0.5s;
 
 .text-box{
     width: 30%;
-    color: rgb(75, 73, 73);
+    color: rgb(255, 255, 255);
     position:absolute;
     top: 50%;
     left: 15%;
@@ -69,3 +69,7 @@ transition: 0.5s;
 .text-box h1{
     font-size: 50px;
 }
+
+
+
+
