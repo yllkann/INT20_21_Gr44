@@ -57,7 +57,6 @@ transition: 0.5s;
 
 .text-box{
     width: 30%;
-    color: rgb(255, 255, 255);
     position:absolute;
     top: 50%;
     left: 15%;
@@ -133,7 +132,7 @@ padding-bottom: 20px;
 
 .topics
 {
-    width:60%;
+    width:57%;
     
 }
 .guide h1
@@ -178,11 +177,12 @@ h2{
     font-size: 33px;
     padding-bottom: 20px;
     padding-top: 15px;
+    margin-left:80px ;
 }
 
 .videos img
 {
-    margin-left: 10px;
+    margin-left: 80px;
     width: 175px;
     padding-bottom: 25px;
    
@@ -204,16 +204,3 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
 
-.kater
-{
-    width: 100%;
-}
-
-.kater div
-{
-    display: inline-block;
-}
-.utf
-{
-    width: 45%;
-}
