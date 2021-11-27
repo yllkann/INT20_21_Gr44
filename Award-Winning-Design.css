@@ -122,7 +122,7 @@ transition: 0.5s;
 .design
 {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     
 }
 .design h1{
@@ -209,3 +209,68 @@ transition: 0.5s;
     padding-left: 310px;
     padding-top: 20px;
 }
+
+/*Idete*/
+
+.idete {
+    text-align: center;
+    border: 2px sold black;
+    height: 91vh;
+    width: 100%;
+}
+.idete div{
+    display: inline-block;
+    border: black 2 px;
+}
+
+.idete .idete2, .idete .idete1 {
+    border: 2px solid black;
+    width:48%;
+    height: 55vh;
+    padding-top:50px ;
+}
+.idete .idete2 h1,.idete .idete2 h4, .idete .idete1 h1,.idete .idete1 h4{
+    padding-top: 30px;
+  
+}
+
+/*KOMENTET*/
+
+.komente {
+    background-color: #47494c;
+    width: 100%;
+    height: 50vh;
+    color: white;
+}
+.komente div{
+    display: inline-block;
+}
+.komente .k1{
+    border: 2px solid black;
+    width:48%;
+    height: 30vh;
+    padding-top:50px ;
+}
+.komente .k2 {
+    border: 2px solid black;
+    width:48%;
+    height: 40vh;
+    padding-top:50px ;
+}
+
+/*GRID*/
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-itm1{
+    border: 1px solid red;
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+
+
+
