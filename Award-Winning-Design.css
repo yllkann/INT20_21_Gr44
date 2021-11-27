@@ -248,26 +248,43 @@ transition: 0.5s;
 .komente .k1{
     border: 2px solid black;
     width:48%;
-    height: 30vh;
+    
     padding-top:50px ;
 }
 .komente .k2 {
     border: 2px solid black;
     width:48%;
-    height: 40vh;
+    
     padding-top:50px ;
 }
 
 /*GRID*/
+
 .grid{
+    margin-top:150px ;
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+    width: 30%;
+    padding-left:4px;
+    padding-right: 100px;
+    
+    height: 20vh;
+  
 }
 .grid-itm1{
-    border: 1px solid red;
-    padding: 20px;
+   
+   padding: 0%;
+    margin: 0%;
     font-size: 30px;
+    width: 50vh;
+ grid-column-gap:0px ;
+}
+.grid img{
+    width: 100%;
+
+}
+.grid img:hover{
+    background-color: pink;
 }
 
 
