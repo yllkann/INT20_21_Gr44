@@ -2,10 +2,39 @@
     margin: 0;
     padding: 0;
 }
-
+.footer{
+    background-color: black;
+    height: 80vh;
+}
 table{
-    width: 98%;
+    width: 70%;
     height: 70vh;
     font-size: 20px;
-    margin:100px 10px 10px 10px;
+    background-color: black;
+    color: white;
+    margin:0px 100px 100px 200px;
+    
+   
+}
+
+table th{
+    text-align: left;
+    
+}
+table a{
+    text-decoration:none ;
+    color: white;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+table td:hover{
+    color: grey;
+    background-color: rgba(128, 128, 128, 0.211);
+
+}
+th,  td{
+    border-collapse: collapse;
+    border-bottom: 0.5px solid rgb(62, 60, 60);
 }
