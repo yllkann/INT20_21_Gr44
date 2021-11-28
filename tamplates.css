@@ -72,6 +72,10 @@ transition: 0.5s;
 .text-box h1{
     font-size: 29px;
 }
+.text-box h1 abbr
+{
+    text-decoration: none;
+}
 .text-box p{
     margin:10px 0 10px;
     font-size: 14px;
