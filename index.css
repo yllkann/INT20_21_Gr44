@@ -137,23 +137,11 @@
       padding-left: 22px;
       
     }
-    .fazat .foto1{
-        position: absolute;
-        top: 1800px;
-        left: 80px;
-        
-    }
-    .fazat .foto3{
-        position: absolute;
-        top: 2000px;
-        left: 90px;
-        
-    }
+ 
     .fazat .foto2
     {
-            position: relative;
-            top: 0;
-            left: 0;
+      position: relative;
+      padding: 50px 10px 50px 200px;
     }
     .fazat table{
       
@@ -173,6 +161,11 @@
       height: 130vh;
       border: 2px solid black;
     }
+    .kutia .pjesa2
+    {
+      position: relative;
+      
+    }
     .kutia .pjesa1
     {
       margin-top: 20px;
@@ -181,7 +174,7 @@
       float: left;
     }
     .kutia .pjesa2{
-      margin-top: 20px;
+      align-items: left;
       height: 70vh;
       width:70%;
       
@@ -189,18 +182,17 @@
    
     }
     .kutia img{
-      margin-top: 15%;
-      margin-left: 25%;
+     padding: 10px 10px 0px 400px;
       image-resolution:initial;
     }
     
-    .kutia .pjesa1  ul li 
+    .kutia .pjesa1  ol li 
     {
       padding-bottom: 5px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     list-style: none;
+     
     }
-    .kutia .pjesa1  ul li a:hover
+    .kutia .pjesa1  ol li a:hover
     {
      color:#3a3b3c;
      background-color:black;
