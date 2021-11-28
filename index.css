@@ -205,7 +205,12 @@
     /*AKSIONARET*/
     .aksionaret
     {
+<<<<<<< HEAD
       background-color: rgba(0, 0, 0, 0.231);
+=======
+      padding-top:100px;
+      background-color: black;
+>>>>>>> 9f49586fd8513e29bebbceef4e1e506c81b8a20c
       width: 100%;
       height: 80vh;
       color: white;
