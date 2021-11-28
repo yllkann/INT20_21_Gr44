@@ -188,25 +188,66 @@ background: rgb(44, 43, 43);
 /*-----Section2 ------footer---*/
 
 
+/*Footer*/
 .footer{
-    width: 100%;
+    padding-top: 70px;
+    background-color: black;
+    height: 100vh;
+}
+.footer table{
+    width: 70%;
+    height: 70vh;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin:0px 100px 100px 200px;
+    
+   
+}
+
+.footer table th{
+    text-align: left;
+    
+}
+.footer table a{
+    text-decoration:none ;
+    color: white;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.footer table td:hover{
+    color: grey;
+    background-color: rgba(128, 128, 128, 0.211);
+
+}
+.footer th,  td{
+    border-collapse: collapse;
+    border-bottom: 0.5px solid rgb(62, 60, 60);
+}
+.section
+{
+    padding-left: 30%;
+}
+.fa {
+    padding: 20px;
+    font-size: 100px;
+    width: 30px;
     text-align: center;
-    padding: 30px;
-    background-color: gray;
-
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 25px;
-    font-weight:600;
-
+    text-decoration: none;
+    margin: 5px 5px 100px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
 }
 
-.icons .fa{
-color: black;
-margin: 0 13px;
-cursor: pointer;
-padding: 18px 0;
+.fa-facebook ,.fa-twitter,.fa-google,.fa-linkedin,.fa-youtube,.fa-instagram,.fa-pinterest{
+  background: rgba(0, 0, 0, 0.095);
+  color: white;
+  width: 30px;
 }
 
 
