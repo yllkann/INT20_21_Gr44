@@ -54,7 +54,7 @@ transition: 0.5s;
     width: 100%;
 }
 
-
+/*texti ne header*/
 .text-box{
     width: 30%;
     position:absolute;
@@ -131,7 +131,7 @@ padding-bottom: 20px;
 {
     background-color: rgb(197, 197, 197);
     width: 100%;
-    height: 100vh;
+    height: 110vh;
    
 }
 .guide div{
