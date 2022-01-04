@@ -18,6 +18,7 @@ nav img:hover{
 }
 
 .nav-links{
+    
     flex: 1;
     text-align: right;
 }
@@ -62,6 +63,10 @@ transition: 0.5s;
 .text-box h1{
     font-size: 50px;
     color: white;
+    border: 1px solid;
+    margin-left: 25px;
+    padding: 10px;
+    box-shadow: 10px 10px;
 }
 
 
@@ -170,17 +175,18 @@ padding-bottom: 20px;
     margin-right: 30px;
     margin-left: 30px;
     padding: 15px;
-  background-color: white;
+  background-color: rgb(172, 180, 182);
     width: 20%;
     display: inline-block;
 }
 .con1 a{
+
     text-decoration: none;
     color: black;
 }
 .con1 a:hover
 {
-    color:rgb(190, 98, 170);
+    color:rgb(118, 104, 115);
    
 }
 
@@ -197,6 +203,7 @@ h2{
     padding-bottom: 20px;
     padding-top: 15px;
     margin-left:80px ;
+    
 }
 
 .videos video
@@ -219,7 +226,7 @@ h2{
 
     margin-right: 50px;
     margin-top: 60px;
-    color: black;
+    color: rgb(213, 208, 208);
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
@@ -247,7 +254,7 @@ width: 90%;
 resize: both;
 overflow: auto;
 outline: 5px dashed black;
-  outline-offset: 5px;
+outline-offset: 5px;
 }
 
 #ph
@@ -275,7 +282,8 @@ outline: 5px dashed black;
 }
 #dr1,#dr2
 {
-    border: black dotted 3px;
+    border: 10px solid transparent;
+    border-image: url(Foto/lolo.jpg) 30 round;
     margin-bottom: 10px;
     margin-right: 15px;
     width: 350px;
