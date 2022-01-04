@@ -1,9 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(circle, rgb(214, 210, 210), rgb(176, 176, 164), rgb(129, 133, 129));
+   
   }
   
   * {
     box-sizing: border-box;
+  }
+  img{
+
+      border-radius: 50%;
   }
   .b11 h1{
     display: inline-block;
@@ -13,7 +19,7 @@ body {
 
   .b11 a{
       text-decoration: none;
-      color:black;
+      color:white;
   }
   
   
@@ -45,7 +51,7 @@ body {
   
   .fb , .twitter, .google{
     
-    color: black;
+    color: white;
     border: 2px solid black;
   }
   
@@ -57,7 +63,7 @@ body {
   }
   
   input[type=submit]:hover {
-    background-color: grey;
+    background-color: gray;
   }
   
 
@@ -90,7 +96,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
+    background-color: #ccc;
     border: 1px solid #ccc;
     border-radius: 50%;
     padding: 8px 10px;
@@ -99,7 +105,7 @@ body {
   
   .hide-md-lg {
     display: none;
- 
+
   }
   
   

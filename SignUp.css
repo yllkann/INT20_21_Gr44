@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(circle, rgb(214, 210, 210), rgb(176, 176, 164), rgb(129, 133, 129));
+   
   }
   
   * {
