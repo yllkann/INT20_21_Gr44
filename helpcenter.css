@@ -81,15 +81,21 @@ transition: 0.5s;
     padding: 0%;
     display: flex;
     animation-name: keyy;
-    animation-duration: 4s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
 }
 
 
 @keyframes keyy {
     0%{background-color: gray;}
-    25%{background-color: rgb(74, 72, 72);}
-   50%{background-color: rgb(35, 35, 35);}
-   100%{background-color: black;}
+    15%{background-color: rgb(74, 72, 72);}
+   30%{background-color: rgb(35, 35, 35);}
+   45%{background-color: black;}
+   60%{background-color: rgb(35, 35, 35);}
+   75%{background-color: rgb(74, 72, 72);}
+   100%{background-color: gray;}
 }
 
 .Product div
