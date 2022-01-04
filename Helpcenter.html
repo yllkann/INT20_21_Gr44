@@ -17,7 +17,7 @@
 .header{
 min-height: 20vh;
 width: 100%;
-background-color: rgb(54, 54, 54);
+background-color: rgb(245, 240, 240);
 background-position: center;
 background-size: cover;
 position: relative;
@@ -310,28 +310,76 @@ position: relative;
 <ul>
     <li>
         <a href="#">
-        <img src="Foto/helpcpic/vid1.png">
+            <video height="100" controls>
+                <source src="https://www.youtube.com/watch?v=d4t_gz4WIwg">
+                Your browser does not support the video tag.
+                </video>
       <h4> All about images</h4></a>
     </li>
     <li>
         <a href="#">
-        <img src="Foto/helpcpic/vid2.png">
+            <video height="100"  controls>
+                <source src="https://www.youtube.com/watch?v=d4t_gz4WIwg">
+                Your browser does not support the video tag.
+                </video>
       <h4>Introducing<br> Commerce</h4></a>
     </li>
     <li>
         <a href="#">
-        <img src="Foto/helpcpic/vid3.png">
+            <video height="100"  controls>
+                <source src="https://www.youtube.com/watch?v=d4t_gz4WIwg">
+                Your browser does not support the video tag.
+                </video>
       <h4> Build your first<br>
          BXC site</h4></a>
     </li>
     <li>
         <a href="#">
-        <img src="Foto/helpcpic/vid4.png">
+            <video height="100"  controls>
+                <source src="https://www.youtube.com/watch?v=d4t_gz4WIwg">
+                Your browser does not support the video tag.
+                </video>
       <h4> Your pages <br> and Navigation</h4></a>
     </li>
 </ul>
 </div>
 </section>
+
+
+<section id="inn">
+<div>
+<h1>Information about designin your own webpage</h1>
+</div>
+<div id="info">
+
+<p>
+    A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server. Notable examples are wikipedia.org, google.com, and amazon.com.
+
+All publicly accessible websites collectively constitute the World Wide Web. There are also private websites that can only be accessed on a private network, such as a company's internal website for its employees.
+
+Websites are typically dedicated to a particular topic or purpose, such as news, education, commerce, entertainment, or social networking. Hyperlinking between web pages guides the navigation of the site, which often starts with a home page.
+
+Users can access websites on a range of devices, including desktops, laptops, tablets, and smartphones. The app used on these devices is called a web browser.
+</p>
+
+</div>
+</section>
+<!------------------------------------------------------------------->
+<section id="ph">
+    <h1>Do you want to know how easy it is to create with us !! </h1>
+
+    <p style="margin-top: 20px;"> <strong> Here is an example : </strong></p>
+</section>
+<section id="draganddrop">
+
+<div id="dr1" ondrop="drop(event)" ondragover="allowDrop(event)">   
+<img src="Foto/Cozy.png" draggable="true" ondragstart="drag(event)" id="drag1" width="300" height="200">
+</div>
+<div id="dr2"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</section>
+
+
     <!--FOOTER-->
         <footer class="footer">
             <table>
@@ -418,6 +466,24 @@ position: relative;
           </footer>
 
 <script>
+
+//Where to Drop - ondragover
+function allowDrop(ev) {
+    
+  ev.preventDefault();
+}
+//What to Drag - ondragstart and setData()
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+//Do the Drop - ondrop
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+
 
 
 </script>

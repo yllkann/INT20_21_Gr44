@@ -1,3 +1,5 @@
+
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -7,7 +9,12 @@ nav{
 nav img{
     width: 90px;
     border-radius: 50%;
-
+    outline-style: double;
+    transition:transform 2s;
+  
+}
+nav img:hover{
+   transform: rotateX(240deg);
 }
 
 .nav-links{
@@ -73,7 +80,18 @@ transition: 0.5s;
    background-color: gray;
     padding: 0%;
     display: flex;
+    animation-name: keyy;
+    animation-duration: 4s;
 }
+
+
+@keyframes keyy {
+    0%{background-color: gray;}
+    25%{background-color: rgb(74, 72, 72);}
+   50%{background-color: rgb(35, 35, 35);}
+   100%{background-color: black;}
+}
+
 .Product div
 {
 margin:0%;
@@ -175,12 +193,12 @@ h2{
     margin-left:80px ;
 }
 
-.videos img
+.videos video
 {
-    margin-left: 80px;
+    margin-left: 50px;
     width: 175px;
-    padding-bottom: 25px;
-   
+    padding-bottom: 60px;
+
 }
 .videos ul
 {
@@ -192,12 +210,88 @@ h2{
 
 .videos h4{
     float: right;
-    margin-right: 10px;
+
+    margin-right: 50px;
     margin-top: 60px;
     color: black;
-    font-size: 25px;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
+
+#inn
+{
+    height: 250px;
+    padding-top: 30px;
+
+}
+
+#inn h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    margin-left:80px ;
+    
+}
+
+#info{
+margin-left: 50px;
+width: 90%;
+resize: both;
+overflow: auto;
+outline: 5px dashed black;
+  outline-offset: 5px;
+}
+
+#ph
+{
+    height: 80px;
+    background-color: gray;
+    
+    padding:10px;
+    padding-bottom: 5px;
+
+}
+
+#draganddrop
+{
+    height: 250px;
+    background-color: gray;
+    padding-top: 15px;
+    display: flex;
+
+}
+
+#dr1
+{
+    margin-left:300px;
+}
+#dr1,#dr2
+{
+    border: black dotted 3px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    width: 350px;
+    height: 90%;
+
+
+}
+
+#draganddrop img
+{
+    margin-top:15px;
+     margin-left: 30px;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+
+
 /*Footer*/
 .footer{
     padding-top: 70px;
