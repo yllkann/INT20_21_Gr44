@@ -6,19 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="SignUp.css">
     <title>Document</title>
+    <script>
+      function validateForm() {
+      let x = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      let y = document.forms["myForm"]["psw"].value;
+      if (y == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      let z = document.forms["myForm"]["psw-repeat"].value;
+      if (z == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
 </head>
 <body>
+  <canvas id="myCanvas" width="1500" height="200" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(1500,200);
+    ctx.stroke();
+    </script>
     <section class="b11">
         <h1><a href="LogIn.html">Back</a></h1>
         
 
     </section>
+   
+    
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(200,0);
+    ctx.lineTo(0,1500);
+    ctx.stroke();
+    </script>
+   
+      
+      <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(200,0);
+      ctx.lineTo(0,100);
+      ctx.stroke();
+      </script>
     <br>
     <br>
     <br>
     
     
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form action="/action_page.php" style="border:1px solid #ccc" name="myForm">
     <div class="container">
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
@@ -51,5 +99,9 @@
       </div>
     </div>
   </form>
+   <canvas id="myCanvas" width="1500" height="200" >
+    Your browser does not support the HTML canvas tag.</canvas>
+ <canvas id="myCanvas" width="200" height="100" >
+      Your browser does not support the HTML canvas tag.</canvas>
 </body>
 </html>

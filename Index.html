@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,23 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheeet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
     <title>Web-creator-WebDXC</title>
+    
+    <script>
+      function showText(id,delay){
+      var elem=document.getElementById(id);
+        setTimeout(function(){elem.style.visibility='inherit';},delay*1000)
+      }
+      window.onload=function(){
+        showText('delayedText1',2);
+        showText('delayedText2',2.5);
+        showText('delayedText3',3);
+        showText('delayedText4',3.5);
+        showText('delayedText5',4);
+        showText('delayedText6',4.5);  
+      }
+    </script>
  
 </head>
 
@@ -49,11 +66,15 @@
   </section>
 
 
+<div >
 
-
+  
 <!--SLOGANI-->
 
-<p class="slogan1" style="padding-left: 20px; font-size: 210px; width: 100%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: white;">CREATE YOUR<br> OWN<br> WEBSITE</p>
+<p class="slogan1" style="padding-left: 20px; font-size: 210px; width: 100%;
+ font-family: 'Franklin Gothic Medium', 
+'Arial Narrow', Arial, sans-serif; color: white;">
+  CREATE YOUR<br> OWN<br> WEBSITE</p>
 
 
 <br>
@@ -61,40 +82,96 @@
 <!--HAPAT PER REALIZIMIN DHE FUNKSIONIMIN E WEBSITE-->
 
 <div class="fazat" id="id">
-    <div class="fazat-p1">
-      <img src="Foto/web12.jpg" class="foto2"style="width: 70%;">     
+  <div class="fazat-p1" class="slideshow-container">
+
+    <div class="mySlides fade">
+     
+      <img src="Foto/web12.jpg" style="width:70%; margin-left: 150px; margin-top: 40px;">
+      
     </div>
-    <div class="fazat-p2">
+    
+    <div class="mySlides fade">
+      
+      <img src="Foto/web31.jpg" style="width:70%; margin-left: 150px;margin-top: 40px;">
+     
+    </div>
+    
+    <div class="mySlides fade">
+     
+      <img src="Foto/web2.1png.png" style="width:70%; margin-left: 150px;margin-top: 40px;">
+      
+    </div>
+    <div class="mySlides fade">
+      
+      <img src="Foto/webb1.jpg" style="width:70%; margin-left: 150px;margin-top: 40px;">
+      
+    </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      
+     
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      
+    }
+    </script>
+    <div  class="fazat-p2">
       <table >
-        <tr>
+        <tr id="delayedText1" style="visibility: hidden;">
         <th rowspan="2" style="font-size: 170px;">1</th>
         <th style="text-align: left; font-size: 20px; padding-left: 10px; padding-top: 20px;" >
           CREATE A WEBSITE</th>
         
       </tr>
-      <tr>
+      <tr id="delayedText2" style="visibility: hidden;">
         
         <td style="padding-left: 10px; margin: 0;">Explore which tools you want to add—whether it’s 
           <br>setting up an online store, booking services,
           <br> or adding your favorite third-party extensions.</td>
       </tr>
-      <tr>
+      <tr id="delayedText3" style="visibility: hidden;">
         <th rowspan="2" style="font-size: 170px;">2</th>
         <th style="text-align: left; font-size: 20px;padding-left: 10px;padding-top: 20px;">
           SELL ANYTHING</th>
       </tr>
-      <tr>
+      <tr id="delayedText4" style="visibility: hidden;">
         
         <td style="padding-left: 10px;">Select from any of our industry-leading website templates,
            <br>designer fonts, and color palettes that best fit your<br> 
            personal style and professional needs.</td>
       </tr>
-      <tr>
+      <tr id="delayedText5" style="visibility: hidden;">
         <th rowspan="2"style="font-size: 170px;">3</th>
         <th style="text-align: left; font-size: 20px;padding-left: 10px;padding-top: 20px;">
           MARKET YOUR BUSINESS</th>
       </tr>
-      <tr>
+      <tr id="delayedText6" style="visibility: hidden;">
         
         <td style="padding-left: 10px;">Stand out in every inbox and social feed. On-brand
            <br>email campaigns and social tools make it easy
@@ -119,34 +196,100 @@ anen e djathte me dal nje figure qe pershtatet me ate teme-->
   <div class="pjesa1"> 
     
     <ol style="padding-left: 20px; ">
-      <li>
-        <a href="#"style="font-size: 55px;">Online Store</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')" >
+        <a href="#"style="font-size: 55px;"onmouseover="changeColor(this)" onmouseout="changeColor(this)">Online Store</a>
       </li>
-      <li>
-        <a href="#"style="font-size: 55px;">Local Business</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')">
+        <a href="#"style="font-size: 55px;" onmouseover="changeColor(this)" onmouseout="changeColor(this)">Local Business</a>
       </li>
-      <li>
-        <a href="#"style="font-size: 55px;">Portofolio</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')">
+        <a href="#"style="font-size: 55px;" onmouseover="changeColor(this)" onmouseout="changeColor(this)">Portofolio</a>
       </li>
-      <li>
-        <a href="#"style="font-size: 55px;">Blog</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')">
+        <a href="#"style="font-size: 55px;" onmouseover="changeColor(this)" onmouseout="changeColor(this)">Blog</a>
       </li>
-      <li>
-        <a href="#" style="font-size: 55px;">Reastaurant</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')">
+        <a href="#" style="font-size: 55px;" onmouseover="changeColor(this)" onmouseout="changeColor(this)">Reastaurant</a>
       </li>
-      <li>
-        <a href="#"style="font-size: 55px;">Services</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')">
+        <a href="#"style="font-size: 55px;" onmouseover="changeColor(this)" onmouseout="changeColor(this)">Services</a>
       </li>
-      <li>
-        <a href="#"style="font-size: 55px;">Personal and CV</a>
+      <li onmouseover="changeBGColor(this,'black')" onmouseout="changeBGColor(this,'white')">
+        <a href="#"style="font-size: 55px;" onmouseover="changeColor(this)" onmouseout="changeColor(this)">Personal and CV</a>
       </li>
     </ol>
      
   </div>
-  <div class="pjesa2">
-    <img src="Foto/web12.jpg" class="foto2"style="width: 35%;">
+  <script>
+    function changeBGColor(obj,colorName){
+      obj.style.backgroundColor=colorName;
+    }
+    function changeColor(obj){
+      if(obj.style.color=='white'){
+        obj.style.color='black';
+      }
+      else{
+        obj.style.color='white';
+      }
+    }
+  </script>
+  <div class="pjesa2"class="slideshow-container">
+    <div class="mySlides fade">
+     
+      <img src="Foto/web12.jpg" style="width:35%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="Foto/web31.jpg" style="width:35%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+     
+      <img src="Foto/web2.1png.png" style="width:35%">
+      
+    </div>
+    <div class="mySlides fade">
+      
+      <img src="Foto/webb1.jpg" style="width:35%">
+      
+    </div>
+  
   </div>
+  <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
 
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        
+       
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+          
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        
+      }
+      </script>
 </section>
 
 
@@ -177,6 +320,12 @@ anen e djathte me dal nje figure qe pershtatet me ate teme-->
       </address></button></p>
   </div>
 </section>
+
+
+<!--video-->
+<div class="wrapper">
+  <video src="How websites work.mp4" autoplay controls></video>
+</div>
 <!--FOOTER-->
 <footer class="footer">
   <table>
@@ -262,14 +411,9 @@ anen e djathte me dal nje figure qe pershtatet me ate teme-->
 </section>
 </footer>
 
-
-
 </body>
 
 </html>
-
-
-
 
 
 
