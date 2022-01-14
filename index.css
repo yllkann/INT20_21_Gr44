@@ -26,6 +26,10 @@
       margin-left: 50%;
     }
 
+abbr{
+  text-decoration: overline;
+}
+
 .words, .lastimg 
 {
   width: 50%;
