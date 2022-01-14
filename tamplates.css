@@ -190,6 +190,24 @@ padding-top: 10px;
     bottom: 50%;
     opacity: 1;
 }
+.emri p
+{
+    width: 100%;
+ 
+    color: white;
+    font-size: 16px;
+    top: 28%;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-decoration: none;
+    /* opacity: 0; */
+    background-color: black;
+    padding:35px;
+
+
+}
+
 
 /*-----------------------------------------------------------------------------------------*/
 .tam2
@@ -272,7 +290,6 @@ padding-top: 10px;
     margin-left:500px ;
     width: 350px;
     height: 60px;
-   
     background-color: rgb(118, 115, 115);
     position: relative;
     animation-name: end;
@@ -289,7 +306,7 @@ padding-top: 20px;
   }
 
   @keyframes end {
-    0%   {background-color:rgb(83, 80, 80); left:0px; top:0px;}
+    0%   {background-color:rgb(83, 80, 80);top:0px;}
     10%  {background-color:rgb(7, 7, 8);top:20px;}
 
   }

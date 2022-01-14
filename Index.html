@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheeet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Web-creator-WebDXC</title>
     
     <script>
@@ -35,7 +36,7 @@
 
   <section class="header">
     <nav>
-    <a href="Index.html"><img src="Foto/lolo.jpg"></a>
+    <a href="#"><img  src="Foto/lolo.jpg"></a>
     <div class="nav-links">
     <ul>
         <li>
@@ -123,7 +124,7 @@
       
      
       var i;
-      var slides = document.getElementsByClassName("mySlides");
+      var slides = document.getElementsByClassName("mySlides fade");
       var dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -291,6 +292,54 @@ anen e djathte me dal nje figure qe pershtatet me ate teme-->
       }
       </script>
 </section>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+<section id="ifundit">
+  <h2>
+    Review:
+</h2>
+
+      <div class="lastimg">
+<img src="foto/lolo2.jpg" alt="personi" id="fotoepar">
+<br>
+<img id="fotoedyt" src="Foto/tamspic/tam4.png" alt="example">
+</div>
+<div class="words">
+  
+  <p>All you have to do is drop the little AdSense code into your website and it 
+    immediately starts working<br><i>
+    Jack Herrick, WikiHow Founder and CEO</i></p>
+<button id="butoni">Hide this section</button>
+</div>
+
+</section>
+<script>
+
+$(document).ready(function(){
+  $("#fotoedyt").click(function(){
+    $(this).animate({
+      left: '100px',
+      height: '550px',
+      width: '1000px',
+
+    });
+   
+  });
+});
+
+$(document).ready(function(){
+  $("#butoni").click(function(){
+    $("#ifundit").hide("slow", function(){
+      alert("The section is now hidden");
+    });
+  });
+});
+
+
+
+</script>
 
 
 <!--AKSIONARET-->
@@ -300,7 +349,7 @@ anen e djathte me dal nje figure qe pershtatet me ate teme-->
 <section class="aksionaret" >
   
   <div class="card p1">
-    <img  style=" width: 40%; height: 50%;"src="Foto/profil.png" alt="John" style="width:100%">
+    <img style=" width: 40%; height: 50%;"src="Foto/profil.png" alt="John" style="width:100%" >
     <h1>Vlera Tahiri</h1>
     <p class="title">CEO & Founder, Example</p>
     <p>Harvard University</p>

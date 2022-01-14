@@ -235,6 +235,7 @@ h2{
 {
     height: 250px;
     padding-top: 30px;
+    background-color: gray;
 
 }
 
@@ -260,7 +261,7 @@ outline-offset: 5px;
 #ph
 {
     height: 80px;
-    background-color: gray;
+    background-color: rgb(57, 57, 57);
     
     padding:10px;
     padding-bottom: 5px;
@@ -270,7 +271,7 @@ outline-offset: 5px;
 #draganddrop
 {
     height: 250px;
-    background-color: gray;
+    background-color: rgb(57, 57, 57);;
     padding-top: 15px;
     display: flex;
 
@@ -282,7 +283,7 @@ outline-offset: 5px;
 }
 #dr1,#dr2
 {
-    border: 10px solid transparent;
+    border: 10px solid ;
     border-image: url(Foto/lolo.jpg) 30 round;
     margin-bottom: 50px;
     margin-right: 15px;

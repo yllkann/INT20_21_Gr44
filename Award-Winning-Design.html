@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Award-Winning-Design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Award Winning Design</title>
 </head>
 <body>
     <!--Header-->
+    <section>
+      <div class="mbi">
+      
+
+      </div>
+    </section>
     <section class="header">
         
         <nav>
@@ -124,18 +131,50 @@
         </div>
     </section>
 
+
+
+
+
+
     <!--komentet-->
     <section class="komente">
         <div class="k1">
-            <u style="text-align: right;"><li>Web DxC allows me to easily customize
+            <ul style="text-align: right;">
+              <li>Web DxC allows me to easily customize
                 <br>how I display each project using galleries,
                 <br>design elements and text to showcase my 
-                <br>work in the best way</li></u>
+                <br>work in the best way 
+              <br><i>Alex Brownie</i>
+              </li>
+              <br><br>
+              </ul>
+              <br>
+                <button id="hellobtn">Show more</button>
+                <br>
+                <button id="hellobtn2">Show less</button>
         </div>
         <div class="k2">
             <img src="Foto/Cozy.png" style="width: 80%;">
         </div>
     </section>
+
+<script>
+  $(document).ready(function(){
+    $("#hellobtn").click(function(){
+      $('ul').append("<li>Web DxC allows me to easily customize <br> how I display each project using galleries,<br>design elements and text to showcase my <br>work in the best way <br><i>Bob Harly</i></li>")
+    })
+  })
+
+
+$(document).ready(function(){
+  $("#hellobtn2").click(function(){
+    $("li:last-child").remove();
+  })
+})
+
+
+</script>
+
 
     <!--Grid-->
     <style>
@@ -245,7 +284,7 @@
         
           <div class="mySlides">
             <div class="numbertext">2 / 6</div>
-            <img src="Foto/portofolio.jpg" style="width:70%; padding-left: 30%;">
+            <img src="Foto/portofilo.jpg" style="width:70%; padding-left: 30%;">
           </div>
         
           <div class="mySlides">
@@ -275,12 +314,12 @@
             <p id="caption"></p>
           </div>
         
-          <div class="row">
+          <div class="row" style="overflow: hidden; height: 190px;">
             <div class="column">
               <img class="demo cursor" src="Foto/blog.jpg" style="width:100%" onclick="currentSlide(1)" alt="Blog">
             </div>
             <div class="column">
-              <img class="demo cursor" src="Foto/portofolio.jpg" style="width:100%" onclick="currentSlide(2)" alt="Portofolio">
+              <img class="demo cursor" src="Foto/portofilo.jpg" style="width:100%" onclick="currentSlide(2)" alt="Portofolio">
             </div>
             <div class="column">
               <img class="demo cursor" src="Foto/onlinestore.jpg" style="width:100%" onclick="currentSlide(3)" alt="Online Store">
