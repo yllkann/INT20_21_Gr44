@@ -41,8 +41,6 @@ function clickCounter() {
       }
     }
 
-
-
     </script>
  
 </head>
@@ -498,7 +496,7 @@ $(document).ready(function(){
  
  $("#loc").click(function(){
 
-   if(navigator.geolocation){
+  if(navigator.geolocation){
  navigator.geolocation.getCurrentPosition(function(position){
  console.log(position);
  alert("You have shared your location with us!! :) ");   
