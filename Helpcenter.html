@@ -468,16 +468,16 @@ Users can access websites on a range of devices, including desktops, laptops, ta
 
 <script>
 
-//Where to Drop - ondragover
+
 function allowDrop(ev) {
     
   ev.preventDefault();
 }
-//What to Drag - ondragstart and setData()
+
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
 }
-//Do the Drop - ondrop
+
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
